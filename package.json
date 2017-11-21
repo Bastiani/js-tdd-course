@@ -4,21 +4,26 @@
   "description": "Curso de JS com TDD",
   "main": "index.js",
   "scripts": {
+    "rafael": "echo 'Rafael Campos de Bastiani'",
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bastiani/js-tdd-course.git"
   },
-  "keywords": [
-    "js",
-    "tdd",
-    "library"
-  ],
+  "keywords": ["js", "tdd", "library"],
   "author": "Rafael Bastiani <rafacdb@gmail.com> (https://rafaelbastiani.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Bastiani/js-tdd-course/issues"
   },
-  "homepage": "https://github.com/Bastiani/js-tdd-course#readme"
+  "homepage": "https://github.com/Bastiani/js-tdd-course#readme",
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "husky": "^0.14.3"
+  }
 }
