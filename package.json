@@ -2,7 +2,7 @@
   "name": "js-tdd-course",
   "version": "1.0.0",
   "description": "Curso de JS com TDD",
-  "main": "index.js",
+  "main": "./src/main.js",
   "scripts": {
     "rafael": "echo 'Rafael Campos de Bastiani'",
     "lint": "./node_modules/.bin/eslint src/*.js",
@@ -17,11 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/Bastiani/js-tdd-course.git"
   },
-  "keywords": [
-    "js",
-    "tdd",
-    "library"
-  ],
+  "keywords": ["js", "tdd", "library"],
   "author": "Rafael Bastiani <rafacdb@gmail.com> (https://rafaelbastiani.com/)",
   "license": "MIT",
   "bugs": {

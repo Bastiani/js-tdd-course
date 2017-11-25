@@ -14,7 +14,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: /node_modules(?!\/webpack-dev-server)/,
         loader: 'babel-loader',
         query: {
           presets: [['es2015', { modules: false }]],
