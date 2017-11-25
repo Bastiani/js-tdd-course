@@ -7,13 +7,21 @@
     "rafael": "echo 'Rafael Campos de Bastiani'",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack --colors --progress",
+    "production": "NODE_ENV='production' ./node_modules/.bin/webpack --colors --progress",
+    "watch": "npm run build -- --watch",
+    "server": "./node_modules/.bin/webpack-dev-server --inline --open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bastiani/js-tdd-course.git"
   },
-  "keywords": ["js", "tdd", "library"],
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
   "author": "Rafael Bastiani <rafacdb@gmail.com> (https://rafaelbastiani.com/)",
   "license": "MIT",
   "bugs": {
@@ -21,9 +29,19 @@
   },
   "homepage": "https://github.com/Bastiani/js-tdd-course#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015-native-modules": "^6.9.4",
     "eslint": "^4.11.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "webpack": "^3.0.0-rc.2",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
   }
 }
